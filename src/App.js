@@ -31,6 +31,7 @@ function App() {
       getSummaryData();
       getVersion();
     }, [activeLocation]);
+    
   const getVersion = async () => {
     const res = await fetch(`${baseUrl}/version`);
     const data = await res.json();
