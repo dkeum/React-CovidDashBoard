@@ -36,7 +36,7 @@ function App() {
     const data = await res.json();
     setlastUpdated(data.timeseries);
   };
-  const getSummaryData = async (location) => {
+  const getSummaryData = async () => {
       if (activeLocation === "canada") {
           return;
       }
